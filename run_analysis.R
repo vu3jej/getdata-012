@@ -33,6 +33,17 @@ activity$V1[activity$V1 == 4] <- 'SITTING'
 activity$V1[activity$V1 == 5] <- 'STANDING'
 activity$V1[activity$V1 == 6] <- 'LAYING'
 
+## 4. Adding descriptive variable names
+names(meanStdColumns) <- gsub(pattern = '*\\.*', replacement = '', x = names(meanStdColumns))
+names(meanStdColumns) <- gsub(pattern = '^t', replacement = 'time.', x = names(meanStdColumns))
+names(meanStdColumns) <- gsub(pattern = '^f', replacement = 'frequncy.', x = names(meanStdColumns))
+names(meanStdColumns) <- gsub(pattern = 'Acc', replacement = 'Acceleration', x =  names(meanStdColumns))
+names(meanStdColumns) <- gsub(pattern = 'Mag', replacement = 'Magnitude', x = names(meanStdColumns))
+names(meanStdColumns) <- gsub(pattern = 'mean', replacement = '.mean', x = names(meanStdColumns))
+names(meanStdColumns) <- gsub(pattern = 'std', replacement = '.std', x = names(meanStdColumns))
+names(meanStdColumns) <- gsub(pattern = 'BodyBody', replacement = 'Body', x =  names(meanStdColumns))
+names(meanStdColumns) <- tolower(names(meanStdColumns))
+
 ## 5. Creating tidy data set with the average of each variable for each activity and each subject
 
 ## Merging activity and subject with meanStdColumns
