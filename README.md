@@ -1,4 +1,4 @@
-# getdata-012 Getting and Cleaning Data Course Project
+# Getting and Cleaning Data Course Project
 
 ## run_analysis.R
 
