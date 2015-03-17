@@ -13,7 +13,7 @@ numbers.
 Packages `reshape` and `reshape2` need to be imported to use `melt` and `dcast`
 functions used for creating tidy data at the end of the script.
 
-####3# Read column names for the measurement data(lines[6])
+###### Read column names for the measurement data(lines[6])
 
 Reads the column names from `features.txt` to be used with `read.table()` while
 reading measurement data.
