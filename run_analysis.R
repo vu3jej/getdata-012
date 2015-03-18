@@ -1,5 +1,4 @@
 ## Importing necessary packages
-library(reshape)
 library(reshape2)
 
 ## Reading column names for measurement data
