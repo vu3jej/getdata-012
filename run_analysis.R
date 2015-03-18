@@ -2,7 +2,7 @@
 library(reshape)
 library(reshape2)
 
-## Reading column names for Measurement data
+## Reading column names for measurement data
 cNames <- read.table(file = 'UCI HAR Dataset/features.txt')
 
 ## Reading training data
@@ -36,7 +36,7 @@ activity$V1[activity$V1 == 6] <- 'LAYING'
 ## 4. Adding descriptive variable names
 names(meanStdColumns) <- gsub(pattern = '*\\.*', replacement = '', x = names(meanStdColumns))
 names(meanStdColumns) <- gsub(pattern = '^t', replacement = 'time.', x = names(meanStdColumns))
-names(meanStdColumns) <- gsub(pattern = '^f', replacement = 'frequncy.', x = names(meanStdColumns))
+names(meanStdColumns) <- gsub(pattern = '^f', replacement = 'frequency.', x = names(meanStdColumns))
 names(meanStdColumns) <- gsub(pattern = 'Acc', replacement = 'Acceleration', x =  names(meanStdColumns))
 names(meanStdColumns) <- gsub(pattern = 'Mag', replacement = 'Magnitude', x = names(meanStdColumns))
 names(meanStdColumns) <- gsub(pattern = 'mean', replacement = '.mean', x = names(meanStdColumns))
