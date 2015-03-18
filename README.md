@@ -10,7 +10,7 @@ numbers.
 
 ###### Imports necessary packages(lines[2:3])
 
-Packages `reshape` and `reshape2` need to be imported to use `melt` and `dcast`
+Package `reshape2` need to be imported to use `melt` and `dcast`
 functions used for creating tidy data at the end of the script.
 
 ###### Read column names for the measurement data(lines[6])
@@ -50,10 +50,10 @@ Uses `cbind`. Code is self explanatory.
 
 ###### Making a tidy data set and writing to a txt file(lines[55:59])
 
-We use the `melt` and `dcast` functions from the packages we imported earlier to
-create a tidy data set with the average of each variable for each activity and
-each subject. Finally we use the `write.table()` funtion with `row.names` set to
-`FALSE` to create a `tidydataset.txt`.
+We use the `melt` and `dcast` functions from the `reshape2` package we imported
+earlier to create a tidy data set with the average of each variable for each
+activity and each subject. Finally we use the `write.table()` funtion with
+`row.names` set to `FALSE` to create a `tidydataset.txt`.
 
 ## Reading the tidy data set uploaded to Coursera
 
