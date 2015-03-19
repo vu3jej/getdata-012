@@ -134,3 +134,8 @@ ___Note___ This is a general overview of the cleaning steps performed on the raw
 ###### frequency.bodygyrojerkmagnitude.mean
 ###### frequency.bodygyrojerkmagnitude.std
 ###### frequency.bodygyrojerkmagnitude.meanfreq
+
+### SOURCES
+
+- This amazing [template](https://github.com/JorisSchut/Data-Science/blob/master/Other%20stuff/Codebook%20template.Rmd) for a codebook by Joris Schut
+- This invaluable piece of [advice](https://class.coursera.org/getdata-012/forum/thread?thread_id=9) from David Hood, Community TA 
