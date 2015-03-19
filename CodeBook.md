@@ -3,7 +3,7 @@ title: 'CodeBook'
 author: 'Jithesh Eriyakkadan Janardhanan'
 ---
 
-_IMPORANT_ For instructions on reading the tidy data set, please refer [README](https://github.com/vu3jej/getdata-012#reading-the-tidy-data-set-uploaded-to-coursera).
+___IMPORANT___ For instructions on reading the tidy data set, please refer [README](https://github.com/vu3jej/getdata-012#reading-the-tidy-data-set-uploaded-to-coursera).
 
 ### PROJECT DESCRIPTION
 
@@ -27,7 +27,7 @@ The raw data contains data set from an an experiment that's been carried out wit
 
 ##### NOTES OF PROCESSING DATA
 
-_Note_ This is a general overview of the cleaning steps performed on the raw data to create a tidy data set. For more detailed instruction as to how the code in `run_analysis.R` works, please refer to the [README](https://github.com/vu3jej/getdata-012#run_analysisr).
+___Note___ This is a general overview of the cleaning steps performed on the raw data to create a tidy data set. For more detailed instruction as to how the code in `run_analysis.R` works, please refer to the [README](https://github.com/vu3jej/getdata-012#run_analysisr).
 
 1. Read the data in from the `train` and `test` data sets using `read.table()` along with headers from `features.txt`
 2. Merged the `train` and `test` data sets
