@@ -21,7 +21,7 @@ The raw data contains data set from an an experiment that's been carried out wit
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope.
-- A 561-feature vector with time and frequency domain variables.
+- A 561-feature vector with time and Frequency domain variables.
 - Its activity label.
 - An identifier of the subject who carried out the experiment.
 
@@ -44,96 +44,256 @@ ___Note___ This is a general overview of the cleaning steps performed on the raw
 
 ###### subject
     - Group of 30 volunteers within an age bracket of 19-48 years
-    - Integer with values from 1-30
+    - Integer
+    - Values 1-30
 
 ###### activity
-    - Character group of 6 activity labels
-    1 WALKING
-    2 WALKING_UPSTAIRS
-    3 WALKING_DOWNSTAIRS
-    4 SITTING
-    5 STANDING
-    6 LAYING
+    - Group of Activity labels
+    - Character
+    1. WALKING
+    2. WALKING_UPSTAIRS
+    3. WALKING_DOWNSTAIRS
+    4. SITTING
+    5. STANDING
+    6. LAYING
 
 ###### time.bodyacceleration.meanx
+    - Time domain signal
+    - Numeric
 ###### time.bodyacceleration.meany
+    - Time domain signal
+    - Numeric
 ###### time.bodyacceleration.meanz
+    - Time domain signal
+    - Numeric
 ###### time.bodyacceleration.stdx
+    - Time domain signal
+    - Numeric
 ###### time.bodyacceleration.stdy
+    - Time domain signal
+    - Numeric
 ###### time.bodyacceleration.stdz
+    - Time domain signal
+    - Numeric
 ###### time.gravityacceleration.meanx
+    - Time domain signal
+    - Numeric
 ###### time.gravityacceleration.meany
+    - Time domain signal
+    - Numeric
 ###### time.gravityacceleration.meanz
+    - Time domain signal
+    - Numeric
 ###### time.gravityacceleration.stdx
+    - Time domain signal
+    - Numeric
 ###### time.gravityacceleration.stdy
+    - Time domain signal
+    - Numeric
 ###### time.gravityacceleration.stdz
+    - Time domain signal
+    - Numeric
 ###### time.bodyaccelerationjerk.meanx
+    - Time domain signal
+    - Numeric
 ###### time.bodyaccelerationjerk.meany
+    - Time domain signal
+    - Numeric
 ###### time.bodyaccelerationjerk.meanz
+    - Time domain signal
+    - Numeric
 ###### time.bodyaccelerationjerk.stdx
+    - Time domain signal
+    - Numeric
 ###### time.bodyaccelerationjerk.stdy
+    - Time domain signal
+    - Numeric
 ###### time.bodyaccelerationjerk.stdz
+    - Time domain signal
+    - Numeric
 ###### time.bodygyro.meanx
+    - Time domain signal
+    - Numeric
 ###### time.bodygyro.meany
+    - Time domain signal
+    - Numeric
 ###### time.bodygyro.meanz
+    - Time domain signal
+    - Numeric
 ###### time.bodygyro.stdx
+    - Time domain signal
+    - Numeric
 ###### time.bodygyro.stdy
+    - Time domain signal
+    - Numeric
 ###### time.bodygyro.stdz
+    - Time domain signal
+    - Numeric
 ###### time.bodygyrojerk.meanx
+    - Time domain signal
+    - Numeric
 ###### time.bodygyrojerk.meany
+    - Time domain signal
+    - Numeric
 ###### time.bodygyrojerk.meanz
+    - Time domain signal
+    - Numeric
 ###### time.bodygyrojerk.stdx
+    - Time domain signal
+    - Numeric
 ###### time.bodygyrojerk.stdy
+    - Time domain signal
+    - Numeric
 ###### time.bodygyrojerk.stdz
+    - Time domain signal
+    - Numeric
 ###### time.bodyaccelerationmagnitude.mean
+    - Time domain signal
+    - Numeric
 ###### time.bodyaccelerationmagnitude.std
+    - Time domain signal
+    - Numeric
 ###### time.gravityaccelerationmagnitude.mean
+    - Time domain signal
+    - Numeric
 ###### time.gravityaccelerationmagnitude.std
+    - Time domain signal
+    - Numeric
 ###### time.bodyaccelerationjerkmagnitude.mean
+    - Time domain signal
+    - Numeric
 ###### time.bodyaccelerationjerkmagnitude.std
+    - Time domain signal
+    - Numeric
 ###### time.bodygyromagnitude.mean
+    - Time domain signal
+    - Numeric
 ###### time.bodygyromagnitude.std
+    - Time domain signal
+    - Numeric
 ###### time.bodygyrojerkmagnitude.mean
+    - Time domain signal
+    - Numeric
 ###### time.bodygyrojerkmagnitude.std
+    - Time domain signal
+    - Numeric
 ###### frequency.bodyacceleration.meanx
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyacceleration.meany
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyacceleration.meanz
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyacceleration.stdx
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyacceleration.stdy
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyacceleration.stdz
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyacceleration.meanfreqx
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyacceleration.meanfreqy
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyacceleration.meanfreqz
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerk.meanx
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerk.meany
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerk.meanz
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerk.stdx
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerk.stdy
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerk.stdz
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerk.meanfreqx
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerk.meanfreqy
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerk.meanfreqz
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyro.meanx
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyro.meany
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyro.meanz
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyro.stdx
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyro.stdy
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyro.stdz
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyro.meanfreqx
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyro.meanfreqy
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyro.meanfreqz
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationmagnitude.mean
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationmagnitude.std
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationmagnitude.meanfreq
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerkmagnitude.mean
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerkmagnitude.std
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodyaccelerationjerkmagnitude.meanfreq
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyromagnitude.mean
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyromagnitude.std
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyromagnitude.meanfreq
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyrojerkmagnitude.mean
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyrojerkmagnitude.std
+    - Frequency domain signal
+    - Numeric
 ###### frequency.bodygyrojerkmagnitude.meanfreq
+    - Frequency domain signal
+    - Numeric
 
 ### SOURCES
 
